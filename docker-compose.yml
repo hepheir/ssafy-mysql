@@ -1,0 +1,9 @@
+services:
+  database:
+    build:
+      context: .
+    image: ssafy-db:latest
+    container_name: ssafy-db
+    restart: unless-stopped
+    ports:
+      - 3306:3306
